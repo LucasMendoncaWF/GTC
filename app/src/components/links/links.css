@@ -1,0 +1,35 @@
+@font-face {
+  font-family: Moon-Light;
+  src: url("../../fonts/MoonLight.otf"); }
+
+@font-face {
+  font-family: Moon-Bold;
+  src: url("../../fonts/MoonBold.otf"); }
+
+@font-face {
+  font-family: Moon-Regular;
+  src: url("../../fonts/MoonRegular.otf"); }
+
+.links {
+  padding-top: 100px;
+  font-family: Moon-Light;
+  font-size: 22px;
+  width: 14%; }
+  .links .link {
+    width: 90px;
+    text-align: center;
+    font-weight: 700;
+    margin: 4px 0px;
+    padding: 4px 0px;
+    margin-left: 20%;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s; }
+    .links .link:hover {
+      opacity: 0.6;
+      background-color: black;
+      color: white; }
+
+@media only screen and (max-width: 1024px) {
+  .links {
+    display: none; } }

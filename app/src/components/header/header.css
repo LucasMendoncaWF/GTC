@@ -1,0 +1,128 @@
+@font-face {
+  font-family: Moon-Light;
+  src: url("../../fonts/MoonLight.otf"); }
+
+@font-face {
+  font-family: Moon-Bold;
+  src: url("../../fonts/MoonBold.otf"); }
+
+@font-face {
+  font-family: Moon-Regular;
+  src: url("../../fonts/MoonRegular.otf"); }
+
+body {
+  margin: 0;
+  position: relative; }
+  body .not-select {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  body .header {
+    font-family: Moon-Light;
+    width: 100%;
+    height: 120px;
+    position: relative; }
+    body .header .cart {
+      font-weight: 900;
+      font-size: 16px;
+      color: #4f4d4d;
+      position: absolute;
+      font-family: Moon-Regular;
+      right: 45px;
+      top: 100px;
+      width: 100px;
+      height: 24px;
+      background-image: url(../../images/Shop.png);
+      background-repeat: no-repeat;
+      background-size: 20px 20px;
+      background-position: calc(100% - 15px) 0px;
+      cursor: pointer;
+      transition: 0.3s; }
+      body .header .cart:hover {
+        opacity: 0.6; }
+    body .header .logo {
+      width: 220px;
+      height: 30px;
+      background-image: url(../../images/logo.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      left: 45px;
+      top: 40px;
+      cursor: pointer;
+      transition: 0.3s; }
+      body .header .logo:hover {
+        opacity: 0.6; }
+    body .header .links-header {
+      display: flex;
+      flex-wrap: wrap;
+      position: absolute;
+      right: 45px;
+      top: 20px; }
+      body .header .links-header .link-header {
+        width: 200px;
+        text-align: center;
+        font-size: 25px;
+        padding: 23px 0px;
+        cursor: pointer;
+        transition: 0.3s; }
+        body .header .links-header .link-header:hover {
+          opacity: 0.6; }
+      body .header .links-header .input {
+        padding-top: 25px;
+        height: 25px;
+        width: 110px;
+        background-image: url(../../images/Search.png);
+        background-repeat: no-repeat;
+        background-size: 14px 14px;
+        background-position: 8px 30px; }
+        body .header .links-header .input .search-header {
+          width: calc(100% - 30px);
+          border-radius: 40px;
+          height: 18px;
+          border: 1px solid black;
+          background: transparent;
+          padding-left: 25px;
+          padding-right: 5px; }
+
+@media only screen and (max-width: 1024px) {
+  body .header {
+    height: 80px;
+    position: sticky;
+    top: 0; }
+    body .header .mobile-menu {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 27px;
+      left: 25px; }
+      body .header .mobile-menu .mobile-menu-bar {
+        width: 100%;
+        height: 4px;
+        margin: 4px 0px;
+        background-color: black; }
+      body .header .mobile-menu:hover {
+        opacity: 0.6; }
+    body .header .search-mobile {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      background-image: url(../../images/Search.png);
+      background-repeat: no-repeat;
+      background-size: 80%;
+      background-position: center; }
+      body .header .search-mobile:hover {
+        opacity: 0.6; }
+    body .header .links-header {
+      display: none; }
+    body .header .cart {
+      display: none; }
+    body .header .logo {
+      top: 30px;
+      width: 150px;
+      height: 21px;
+      left: calc(50% - 75px); } }

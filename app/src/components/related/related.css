@@ -1,0 +1,50 @@
+@font-face {
+  font-family: Moon-Light;
+  src: url("../../fonts/MoonLight.otf"); }
+
+@font-face {
+  font-family: Moon-Bold;
+  src: url("../../fonts/MoonBold.otf"); }
+
+@font-face {
+  font-family: Moon-Regular;
+  src: url("../../fonts/MoonRegular.otf"); }
+
+.related {
+  width: calc(86% - 160px);
+  padding: 20px 80px;
+  margin-left: 14%;
+  margin-bottom: 50px; }
+  .related .related-title {
+    font-family: Moon-Regular;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 40px; }
+  .related .related-items {
+    display: flex;
+    flex-wrap: wrap; }
+    .related .related-items .related-item {
+      width: calc(33% - 80px);
+      padding-right: 80px;
+      cursor: pointer;
+      position: relative;
+      transition: 0.3s; }
+      .related .related-items .related-item .related-img {
+        width: 100%; }
+      .related .related-items .related-item .related-name {
+        width: 100%;
+        font-family: Moon-Regular;
+        font-size: 18px;
+        text-align: center; }
+      .related .related-items .related-item .related-price {
+        font-family: Moon-Regular;
+        font-size: 20px;
+        position: absolute;
+        right: 80px;
+        bottom: 0; }
+      .related .related-items .related-item:hover {
+        transform: scale(1.1); }
+
+@media only screen and (max-width: 1024px) {
+  .related {
+    display: none; } }

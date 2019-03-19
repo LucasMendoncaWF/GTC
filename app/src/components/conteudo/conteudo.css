@@ -1,0 +1,42 @@
+@font-face {
+  font-family: Moon-Light;
+  src: url("../../fonts/MoonLight.otf"); }
+
+@font-face {
+  font-family: Moon-Bold;
+  src: url("../../fonts/MoonBold.otf"); }
+
+@font-face {
+  font-family: Moon-Regular;
+  src: url("../../fonts/MoonRegular.otf"); }
+
+.corpo {
+  display: flex;
+  flex-wrap: wrap; }
+
+.links-header-mobile {
+  display: none; }
+
+@media only screen and (max-width: 1024px) {
+  .conteudo .links-header-mobile {
+    display: block;
+    position: fixed;
+    top: 80px;
+    background-color: white;
+    height: calc(100vh - 80px);
+    width: 100%;
+    z-index: 89;
+    animation: mobileMenuShow 0.3s;
+    overflow: hidden; }
+    .conteudo .links-header-mobile .link-header {
+      font-family: Moon-Regular;
+      font-size: 25px;
+      padding: 10px;
+      padding-left: 20px;
+      border-bottom: 1px solid #f9f7f7; } }
+
+@keyframes mobileMenuShow {
+  from {
+    height: 0; }
+  to {
+    height: calc(100vh - 80px); } }

@@ -1,0 +1,44 @@
+@import '../utils.scss';
+
+.corpo{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.links-header-mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    .conteudo{
+        .links-header-mobile{
+            display: block;
+            position: fixed;
+            top:80px;
+            background-color: white;
+            height: calc(100vh - 80px);
+            width: 100%;
+            z-index: 89;
+            animation: mobileMenuShow 0.3s;
+            overflow: hidden;
+
+            .link-header{
+                font-family: $fontR;
+                font-size: 25px;
+                padding: 10px;
+                padding-left: 20px;
+                border-bottom: 1px solid #f9f7f7;
+            }
+        }
+    }
+}
+
+@keyframes mobileMenuShow {
+    from{
+        height: 0;
+    }
+
+    to{
+        height: calc(100vh - 80px);
+    }
+}

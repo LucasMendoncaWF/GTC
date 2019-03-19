@@ -1,0 +1,149 @@
+@font-face {
+  font-family: Moon-Light;
+  src: url("../../fonts/MoonLight.otf"); }
+
+@font-face {
+  font-family: Moon-Bold;
+  src: url("../../fonts/MoonBold.otf"); }
+
+@font-face {
+  font-family: Moon-Regular;
+  src: url("../../fonts/MoonRegular.otf"); }
+
+.item-shop {
+  width: calc(86% - 160px);
+  padding: 20px 80px;
+  display: flex;
+  flex-wrap: wrap; }
+  .item-shop .item-image {
+    width: 50%;
+    height: 900px;
+    background-image: url(../../images/imagemPrincipal.png);
+    background-position: center;
+    background-size: cover; }
+  .item-shop .item-info {
+    width: 50%; }
+    .item-shop .item-info .item-name {
+      font-family: Moon-Light;
+      font-size: 40px;
+      width: 100%;
+      text-align: center;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-top: 50px;
+      margin-bottom: 350px; }
+    .item-shop .item-info .select-item {
+      width: 100%;
+      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 50px; }
+      .item-shop .item-info .select-item .quantidade {
+        width: 150px; }
+        .item-shop .item-info .select-item .quantidade input {
+          width: calc(60px - 10px);
+          height: 30px;
+          margin: 4px;
+          margin-left: calc(50% - 30px);
+          font-family: Moon-Regular;
+          font-size: 18px;
+          padding-left: 10px;
+          letter-spacing: 1.5px;
+          background: transparent;
+          border: 1px solid black;
+          margin-top: 5px; }
+      .item-shop .item-info .select-item .colors-select {
+        width: 200px;
+        padding: 0px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; }
+        .item-shop .item-info .select-item .colors-select .color {
+          width: 30px;
+          height: 30px;
+          margin: 8px;
+          cursor: pointer;
+          transition: 0.3s; }
+          .item-shop .item-info .select-item .colors-select .color:hover {
+            transform: scale(1.4); }
+          .item-shop .item-info .select-item .colors-select .color.color-black {
+            background-color: black; }
+          .item-shop .item-info .select-item .colors-select .color.color-blue {
+            background-color: #496284; }
+          .item-shop .item-info .select-item .colors-select .color.color-red {
+            background-color: #943202; }
+    .item-shop .item-info .button-item {
+      width: 360px;
+      text-align: center;
+      margin-left: calc(50% - 180px);
+      font-family: Moon-Regular;
+      margin-bottom: 15px; }
+      .item-shop .item-info .button-item.button-buy {
+        background-color: #7a99fb;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 3px;
+        font-size: 25px;
+        padding-top: 20px;
+        height: calc(70px - 20px);
+        cursor: pointer;
+        transition: 0.3s; }
+        .item-shop .item-info .button-item.button-buy:hover {
+          background-color: #496284; }
+      .item-shop .item-info .button-item.button-add {
+        border: 2px solid black;
+        color: black;
+        font-weight: 700;
+        letter-spacing: 3px;
+        font-size: 20px;
+        padding-top: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+        height: calc(50px - 4px);
+        width: calc(360px - 4px); }
+        .item-shop .item-info .button-item.button-add:hover {
+          background-color: black;
+          color: white; }
+
+@media only screen and (max-width: 1024px) {
+  .item-shop {
+    width: 100%;
+    display: block;
+    padding: 0;
+    z-index: 1;
+    position: relative; }
+    .item-shop .item-image {
+      width: 100%;
+      height: 550px; }
+    .item-shop .item-info {
+      width: 100%; }
+      .item-shop .item-info .item-name {
+        display: none; }
+      .item-shop .item-info .select-item {
+        padding: 0;
+        margin-top: -60px;
+        position: relative; }
+        .item-shop .item-info .select-item .quantidade {
+          position: absolute;
+          right: 20px;
+          width: 64px;
+          top: 2px; }
+        .item-shop .item-info .select-item .colors-select .color {
+          border: 1px solid rgba(255, 255, 255, 0.5); }
+      .item-shop .item-info .button-item {
+        width: 60%;
+        margin-left: 20%; }
+        .item-shop .item-info .button-item.button-buy {
+          font-size: 16px;
+          height: 35px;
+          padding-top: 15px; }
+        .item-shop .item-info .button-item.button-add {
+          font-size: 10px;
+          height: 35px;
+          padding-top: 15px;
+          height: 30px;
+          padding-top: 16px;
+          width: calc(60% - 4px); } }

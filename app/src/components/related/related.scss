@@ -1,0 +1,58 @@
+@import '../utils.scss';
+
+.related{
+    width: calc(86% - 160px);
+    padding: 20px 80px;
+    margin-left: 14%;
+    margin-bottom: 50px;
+
+    .related-title{
+        font-family: $fontR;
+        font-size: 20px;
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+
+    .related-items{
+    display: flex;
+    flex-wrap: wrap;
+
+        .related-item{
+            width: calc(33% - 80px);
+            padding-right: 80px;
+            cursor: pointer;
+            position: relative;
+            transition: 0.3s;
+            
+            .related-img{
+                width: 100%;
+            }
+
+            .related-name{
+                width: 100%;
+                font-family: $fontR;
+                font-size: 18px;
+                text-align: center;
+            }
+
+            .related-price{
+                font-family: $fontR;
+                font-size: 20px;
+                position: absolute;
+                right: 80px;
+                bottom: 0;
+            }
+
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .related{
+        display: none;
+    }
+}

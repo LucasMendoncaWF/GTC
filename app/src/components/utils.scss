@@ -1,0 +1,23 @@
+
+@font-face {
+  font-family: Moon-Light;
+  src: url("../../fonts/MoonLight.otf");
+}
+
+@font-face {
+  font-family: Moon-Bold;
+  src: url("../../fonts/MoonBold.otf");
+}
+
+@font-face {
+  font-family: Moon-Regular;
+  src: url("../../fonts/MoonRegular.otf");
+}
+
+
+$fontB: Moon-Bold;
+$fontL: Moon-Light;
+$fontR: Moon-Regular;
+$blue: #7a99fb;
+$red: #943202;
+$blueDark: #496284;
